@@ -1,0 +1,19 @@
+<%! int fontSize;int i; %> 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste de Página</title>
+  </head>
+  <body>
+  
+  <%for (i=1; i < 10; i++){ %>
+    <p>
+    <%= i %>
+    </p>
+    
+   <%}%>
+
+
+  </body>
+</html>

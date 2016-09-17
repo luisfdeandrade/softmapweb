@@ -1,0 +1,10 @@
+package basico;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class GeradorDeApostasBean {
+
+	private int quantidadeNumeros;
+	
+}

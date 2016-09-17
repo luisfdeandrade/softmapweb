@@ -1,0 +1,50 @@
+package managedbeans;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+import managed.Usuario;
+
+@ManagedBean
+public class UsuarioBean {
+	
+	private static List<Usuario> usuarios;
+ 	
+	private Usuario usuario;
+
+	public String cadastrar() {
+		System.out.println(usuario.getNome());
+		System.out.println(usuario.getSexo());
+		System.out.println(usuario.getPais());
+		System.out.println(usuario.isAceito());
+		getUsuarios().add(usuario);
+		return "usuario2";
+	}
+
+	public Usuario getUsuario() {
+		if (usuario == null){
+			usuario = new Usuario();
+		}
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public List<Usuario> getUsuarios() {
+		if (usuarios == null) {
+			usuarios = new ArrayList<Usuario>();
+		}
+		return usuarios;
+	}
+
+	public void setUsuarios(List<Usuario> usuarios) {
+		this.usuarios = usuarios;
+	}
+	
+	
+
+}

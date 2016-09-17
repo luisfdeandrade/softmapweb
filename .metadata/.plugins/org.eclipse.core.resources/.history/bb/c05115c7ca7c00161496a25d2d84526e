@@ -1,0 +1,6 @@
+package basico;
+
+@ManagedBean
+public class GeradorDeApostasBean {
+
+}
