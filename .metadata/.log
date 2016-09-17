@@ -10464,3 +10464,26 @@ Contains: The project description file (.project) for 'Luis' is missing.  This f
 !MESSAGE Save operation warnings.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2016-09-17 09:34:15.216
 !MESSAGE The project description file (.project) for 'Luis' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-09-17 11:14:39.780
+!MESSAGE Deadlock detected. All locks owned by thread Worker-77 will be suspended.
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.internal.jobs.DeadlockDetector.reportDeadlock(DeadlockDetector.java:599)
+	at org.eclipse.core.internal.jobs.DeadlockDetector.lockWaitStart(DeadlockDetector.java:403)
+	at org.eclipse.core.internal.jobs.LockManager.addLockWaitThread(LockManager.java:154)
+	at org.eclipse.core.internal.jobs.OrderedLock.doAcquire(OrderedLock.java:168)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:106)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:82)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:122)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2188)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1303)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:154)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:100)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2016-09-17 11:14:39.780
+!MESSAGE Thread Worker-80 has locks: MultiRule[P/Financeiro], R/, OrderedLock (1) and is waiting for lock OrderedLock (0)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2016-09-17 11:14:39.780
+!MESSAGE Thread Worker-77 has locks: OrderedLock (0) and is waiting for lock R/
