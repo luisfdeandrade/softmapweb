@@ -10,20 +10,16 @@
 	<h1>Busca Localidade</h1>
 	<h:form>
 		<h:outputLabel value="Estado:" for="campo-estado" />
-		
-		<f:ajax render="campo-cidade">
-			<h:selectOneMenu id="campo-estado"
-				value="#{localidadeBean.siglaEstado}"
-				valueChangeListener="#{localidadeBean.mudaEstado}"
-					>
-					<f:selectItems
-					value="#{localidadeBean.estados}"
-					var="e"
-					itemLabel="#{e.nome}"
-					itemValue="#{e.sigla}" />
-			</h:selectOneMenu>
-		
-		</f:ajax>
+		<h:selectOneMenu id="campo-estado"
+			value="#{localidadeBean.siglaEstado}"
+			valueChangeListener="#{localidadeBean.mudaEstado}"
+			onchange="this.form.submit();">
+				<f:selectItems
+				value="#{localidadeBean.estados}"
+				var="e"
+				itemLabel="#{e.nome}"
+				itemValue="#{e.sigla}" />
+		</h:selectOneMenu>
 		
 		<h:outputLabel value="Cidade:" for="campo-cidade" />
 		<h:selectOneMenu

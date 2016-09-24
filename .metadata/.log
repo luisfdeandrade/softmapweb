@@ -10915,3 +10915,15 @@ Caused by: java.lang.ClassNotFoundException: org.apache.maven.plugin.war.WarMojo
 
 !ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-24 09:22:46.692
 !MESSAGE GlassFish: Deploy direcotry C:\Users\aluno\Downloads\glassfish-4.1.1 (1)\glassfish4\glassfish\domains\domain1\eclipseApps\modulo2
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-24 09:46:20.527
+!MESSAGE GlassFish: Deploy direcotry C:\Users\aluno\Downloads\glassfish-4.1.1 (1)\glassfish4\glassfish\domains\domain1\eclipseApps\modulo2
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-24 09:48:59.685
+!MESSAGE GlassFish: Deploy direcotry C:\Users\aluno\Downloads\glassfish-4.1.1 (1)\glassfish4\glassfish\domains\domain1\eclipseApps\modulo2
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-24 09:50:42.635
+!MESSAGE GlassFish: Deploy direcotry C:\Users\aluno\Downloads\glassfish-4.1.1 (1)\glassfish4\glassfish\domains\domain1\eclipseApps\modulo2
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2016-09-24 09:52:16.983
+!MESSAGE GlassFish: Deploy direcotry C:\Users\aluno\Downloads\glassfish-4.1.1 (1)\glassfish4\glassfish\domains\domain1\eclipseApps\modulo2

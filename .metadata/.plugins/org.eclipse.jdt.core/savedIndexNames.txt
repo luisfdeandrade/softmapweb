@@ -61,7 +61,6 @@ INDEX VERSION 1.129+C:\Users\aluno\workspace\.metadata\.plugins\org.eclipse.jdt.
 1999974966.index
 1259316623.index
 3688382936.index
-793001157.index
 3217668093.index
 1118284796.index
 2541820481.index

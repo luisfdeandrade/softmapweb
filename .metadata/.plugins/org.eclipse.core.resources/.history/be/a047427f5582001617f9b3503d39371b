@@ -32,7 +32,6 @@ public class LocalidadeBean {
 		
 		this.estados.add(sp);
 		this.estados.add(rj);
-		this.estado = sp;
 		
 		
 	}

@@ -11,7 +11,7 @@
 	<h:form>
 		<h:outputLabel value="Estado:" for="campo-estado" />
 		
-		<f:ajax render="campo-cidade">
+		<f:ajax rebder="campo-cidade">
 			<h:selectOneMenu id="campo-estado"
 				value="#{localidadeBean.siglaEstado}"
 				valueChangeListener="#{localidadeBean.mudaEstado}"
