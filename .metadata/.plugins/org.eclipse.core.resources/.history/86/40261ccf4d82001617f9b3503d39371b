@@ -1,0 +1,12 @@
+package model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Estado {
+	
+	private String nome;
+	private String sigle;
+	private List<String> cidades = new ArrayList<String>()
+
+}

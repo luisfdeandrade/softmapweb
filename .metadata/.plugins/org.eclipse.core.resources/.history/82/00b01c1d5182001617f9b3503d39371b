@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Busca Localidade</title>
+</h:head>
+
+<h:body>
+	<h1>Busca Localidade</h1>
+	<h:form>
+		<h:outPutLabel value="Estado:" for="campo-estado" />
+		<h:selectOneMenu id="campo-estado"
+			
+			value="#{localidadeBean.siglaEstado}"
+			valueChangeListener="#{localidadeBean.mudaEstado}"
+			onChange="this.form.submit();">
+				<f:selectItems
+				value="#{localidadeBean.estados}"
+				var="e"
+				itemLabel="#{e.nome}"
+				itemValue="#{e.sigla}" />
+		</h:selectOneMenu>
+		
+		<h:outPutLabel value="Cidade:" for="campo-cidade" />
+		<h:selectOneMenu
+		id="campo-cidade"
+		value="#{localidadeBean.cidade}">
+			<f:selectItems
+			value="#{localidadeBean.estado.cidades}" />
+		</h:selectOneMenu>
+		
+	</h:form>
+</h:body>
+</html>

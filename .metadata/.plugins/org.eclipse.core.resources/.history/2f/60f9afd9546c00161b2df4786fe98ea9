@@ -1,8 +1,0 @@
-package moduloweb;
-
-import javax.servlet.http.HttpServlet;
-
-public class OlaMundo extends HttpServlet {
-
-}
-	

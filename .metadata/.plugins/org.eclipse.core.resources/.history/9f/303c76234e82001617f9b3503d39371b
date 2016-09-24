@@ -1,0 +1,18 @@
+package managedbeans;
+
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+import model.Estado;
+
+@ManagedBean
+public class LocalidadeBean {
+	
+	private String cidade;
+	private String siglaEstado;
+	private Estado estado = new Estado();
+	private List<Estado>estados = new ArrayList<Estado>();
+	
+}

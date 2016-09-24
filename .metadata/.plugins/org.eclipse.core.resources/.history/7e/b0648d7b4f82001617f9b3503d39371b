@@ -1,0 +1,37 @@
+package managedbeans;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+import model.Estado;
+
+@ManagedBean
+public class LocalidadeBean {
+	
+	private String cidade;
+	private String siglaEstado;
+	private Estado estado = new Estado();
+	private List<Estado>estados = new ArrayList<Estado>();
+	
+	public LocalidadeBean() {
+		Estado sp = new Estado();
+		sp.setSigla("SP");
+		sp.setNome("São Paulo");
+		sp.getCidades().add("São Paulo");
+		sp.getCidades().add("Campinas");
+		
+		Estado rj = new Estado();
+		rj.setSigla("RJ");
+		rj.setNome("Rio de Janeiro");
+		rj.getCidades().add("Rio de Janeiro");
+		rj.getCidades().add("Niterói");
+		
+		this.estados.add(sp);
+		this.estados.add(rj);
+		
+		
+	}
+}

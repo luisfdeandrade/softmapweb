@@ -1,0 +1,9 @@
+package model;
+
+public class Estado {
+	
+	private String nome;
+	private String sigle;
+	private List<String> cidades = new ArrayList<String>();
+
+}

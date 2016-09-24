@@ -1,0 +1,14 @@
+package managedbeans;
+
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class LocalidadeBean {
+	
+	private String cidade;
+	private String siglaEstado;
+	private Estado estado = new Estado();
+	private List<Estado>estados = new ArrayList<Estado>();
+	
+}

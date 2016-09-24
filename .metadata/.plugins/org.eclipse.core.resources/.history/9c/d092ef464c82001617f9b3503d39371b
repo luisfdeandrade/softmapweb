@@ -1,0 +1,7 @@
+package managedbeans;
+
+import javax.faces.event.PhaseListener;
+
+public class CicloDeVida implements PhaseListener {
+
+}

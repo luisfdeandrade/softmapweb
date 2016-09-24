@@ -1,0 +1,7 @@
+package managedbeans;
+
+
+@ManagedBean
+public class LocalidadeBean {
+
+}
