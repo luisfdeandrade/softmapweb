@@ -1,0 +1,7 @@
+package converter;
+
+@FacesConverter("smartDate");
+
+public class SmartDateConverter implements Converter {
+
+}
